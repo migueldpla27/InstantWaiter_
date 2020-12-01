@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Instant Waiter
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,21 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Instant Waiter</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <!--<img src="https://economipedia.com/wp-content/uploads/test-de-estr%C3%A9s.png" alt="">-->
+    <ion-item>
+      <ion-label position="floating"><ion-icon name="ellipsis-horizontal-sharp"></ion-icon> Enter User</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating"><ion-icon name="ellipsis-horizontal-sharp"></ion-icon> Enter Password</ion-label>
+      <ion-input type="Password"></ion-input>
+    </ion-item>
+    <ion-button>Log In</ion-button>
+    <ion-button>Sign Up</ion-button>
   </div>
 </ion-content>

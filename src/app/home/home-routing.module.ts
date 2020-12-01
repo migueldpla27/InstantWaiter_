@@ -6,6 +6,14 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+  },
+  {
+    path: 'login-user',
+    loadChildren: () => import('./login-user/login-user.module').then( m => m.LoginUserPageModule)
+  },
+  {
+    path: 'login-restaurant',
+    loadChildren: () => import('./login-restaurant/login-restaurant.module').then( m => m.LoginRestaurantPageModule)
   }
 ];
 
